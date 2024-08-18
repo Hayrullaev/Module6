@@ -19,8 +19,8 @@ class Eagle:
 
 class Pegasus(Horse, Eagle):
     def move(self, dx, dy):
-        super().run  # Вызов метода run() класса Horse
-        super().fly  # Вызов метода fly() класса Eagle
+        super().run(dx)  # Вызов метода run() класса Horse
+        super().fly(dy)  # Вызов метода fly() класса Eagle
 
     def get_pos(self):
         return (self.x_distance, self.y_distance)
